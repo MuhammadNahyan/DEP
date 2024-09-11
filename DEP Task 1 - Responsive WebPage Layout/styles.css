@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(laptop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    color: #0c0808;
+}
+
+nav a:active{
+    color: red;
+}
+
+nav a#loginS:active{
+    color: rgb(29, 27, 129);
+}
+
+a#loginS:visited{
+    color: rgb(80, 27, 129);
+}
+
+nav a:hover{
+    background-color: #d8d5d5;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+#sideBar{
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    z-index: 100;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar li, #sidebar a{
+    width: 100%;
+}
+
+#container{
+    /*position: relative;*/
+    margin: 250px 402px 300px;
+    color: rgba(185, 182, 204, 0.897);
+    font-size: 32px;
+    
+    text-align: center;
+    backdrop-filter: blur(10px);
+    width: 530px;
+    height: 100px;
+}
+
+#btn{
+    padding: 8px;
+    margin-top: 12px;
+    font-size: 20px;
+    color: rgba(185, 182, 204, 0.897);
+    background-color: rgb(34, 34, 53);
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(209, 185, 185, 0.651);
+}
+
+#btn:hover{
+    background-color: rgb(46, 46, 75);
+    color: rgba(244, 243, 252, 0.897);;
+}
+
+@media(max-width: 500px){
+       
+    #container{       
+        backdrop-filter: blur(10px);
+        margin: 200px 60px 30px;
+        font-size: 20px;
+        text-align: center;
+        width: 64%;
+        height: 80px;
+    }
+
+    #btn{
+        padding: 3px;
+        margin-top: 2px;
+        font-size: 12px;
+        color: rgba(185, 182, 204, 0.897);
+        background-color: rgb(33, 33, 53);
+        border-radius: 7px;
+        box-shadow: 2px 2px 5px rgba(209, 185, 185, 0.651);
+    }
+
+    #btn:hover{
+        background-color: rgb(46, 46, 75);
+        color: rgba(244, 243, 252, 0.897);;
+    }
+    
+}
+
+/* @media(max-width: 400px){
+    #container{
+        backdrop-filter: blur(10px);
+        margin: 200px 126px 30px;
+        font-size: 20px;
+        text-align: center;
+        width: 50%;
+        height: 80px;
+    }
+} */
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+
+@media(max-width: 400px){
+    #sideBar{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
